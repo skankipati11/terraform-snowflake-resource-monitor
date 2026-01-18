@@ -107,12 +107,6 @@ variable "name_scheme" {
   default = {}
 }
 
-variable "context_templates" {
-  description = "Map of context templates used for naming conventions - this variable supersedes `naming_scheme.properties` and `naming_scheme.delimiter` configuration"
-  type        = map(string)
-  default     = {}
-}
-
 variable "snowflake_private_key" {
   type        = string
   description = "Private key used to access Snowflake"
