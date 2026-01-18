@@ -1,6 +1,7 @@
 variable "name" {
   description = "Name of the resource"
   type        = string
+  default = "example_resource_monitor"
 }
 
 variable "credit_quota" {
