@@ -2,11 +2,12 @@
 provider "snowflake" {
   organization_name = "xodjopc"
   account_name      = "jtc04659"
-  user              = "SKANKIPATI"
+  user              = "TERRAFORM_SVC"
   role              = "ACCOUNTADMIN"
   authenticator     = "SNOWFLAKE_JWT"
   private_key       = var.snowflake_private_key
 }
+
 
 resource "snowflake_resource_monitor" "tf_rm" {
   name = "example_resource_monitor"
