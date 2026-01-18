@@ -8,7 +8,6 @@ provider "snowflake" {
   private_key       = var.snowflake_private_key
 }
 
-
 resource "snowflake_resource_monitor" "tf_rm" {
   name = "example_resource_monitor"
 
