@@ -8,7 +8,7 @@ resource "snowflake_resource_monitor" "tf_rm" {
   notify_triggers = [50, 80, 90]
   suspend_trigger = 100
 
-  notify_users =   ["SKANKIPATI"] 
+  notify_users = ["SKANKIPATI"]
 
   frequency       = "MONTHLY"
   start_timestamp = formatdate("YYYY-MM-DD hh:mm", timeadd(plantimestamp(), "4h"))
