@@ -14,7 +14,4 @@ resource "snowflake_resource_monitor" "tf_rm" {
   start_timestamp = formatdate("YYYY-MM-DD hh:mm", timeadd(plantimestamp(), "4h"))
   end_timestamp   = formatdate("YYYY-MM-DD hh:mm", timeadd(plantimestamp(), "100h"))
 
-  suspend_trigger = 100
-  notify_triggers = [50, 80]  
-
 }
