@@ -42,8 +42,3 @@ output "suspend_triggers" {
   description = "A list of percentage thresholds at which to suspend all warehouses"
   value       = resource.snowflake_resource_monitor.tf_rm.suspend_trigger
 }
-
-output "roles" {
-  description = "Access roles created for resource monitor"
-  value       = local.roles
-}
