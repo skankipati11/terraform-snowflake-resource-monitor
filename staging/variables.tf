@@ -1,6 +1,7 @@
 variable "name" {
   description = "Name of the resource"
   type        = string
+  default     = "example_resource_monitor"
 }
 
 variable "credit_quota" {
@@ -105,12 +106,6 @@ variable "name_scheme" {
     uppercase             = optional(bool, true)
   })
   default = {}
-}
-
-variable "context_templates" {
-  description = "Map of context templates used for naming conventions - this variable supersedes `naming_scheme.properties` and `naming_scheme.delimiter` configuration"
-  type        = map(string)
-  default     = {}
 }
 
 variable "snowflake_private_key" {
